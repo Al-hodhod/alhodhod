@@ -1,14 +1,14 @@
-import { SectionHeader, ChooseTheFirstLetter, LetterSelection, LetterCircle, LetterRow, LineBetweenLetters, AdvertisementRectangle, AdvertisementImageTag, AdvertisementText, ListOfSymbolsForLetterSection, LettersList, SelectedLetterSection, LettersListItem, LetterListItemCircle, LettersListItemTextGroup, LettersListItemTextOne, LettersListItemTextTwo, LettersListItemArrowIcon, BackToLettersButton } from "./page.styled";
+import { SectionHeader, ChooseTheFirstLetter, LetterSelection, LetterCircle, LetterRow, LineBetweenLetters, AdvertisementRectangle, AdvertisementImageTag, AdvertisementText, ListOfSymbolsForLetterSection, LettersList, SelectedLetterSection, LettersListItem, LetterListItemCircle, LettersListItemTextGroup, LettersListItemTextOne, LettersListItemTextTwo, LettersListItemArrowIcon, BackToLettersButton, SelectedLetterMedal } from "./page.styled";
 import Image from 'next/image';
 import GreenVector from "../../public/greenVector.png";
 import AdvertisementImage from "../../public/advertisement.png";
 import ArrowIcon from "../../public/arrow-icon.png"
 
 export default function Home() {
-  const firstRowAlphabets = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-  const secondRowAlphabets = ['I', 'J', 'K', 'L', 'M', 'N', 'O'];
-  const thirdRowAlphabets = ['P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W'];
-  const fourthRowAlphabets = ['X', 'Y', 'Z'];
+  const firstRowAlphabets = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+  const secondRowAlphabets = ['H', 'I', 'J', 'K', 'L', 'M'];
+  const thirdRowAlphabets = ['N', 'O', 'P', 'Q', 'R', 'S', 'T'];
+  const fourthRowAlphabets = ['U', 'V', 'W', 'X', 'Y', 'Z'];
 
   const renderLettersListItems = () => {
     const itemsToRender = 22;
@@ -84,9 +84,12 @@ export default function Home() {
       <SectionHeader>
         List of Symbols for Letter
       </SectionHeader>
-        {/* <SelectedLetterSection> Need to fix
+      <SelectedLetterSection>
+        <SelectedLetterMedal>
           R 
-        </SelectedLetterSection> */}
+        </SelectedLetterMedal>
+        <LineBetweenLetters/>
+      </SelectedLetterSection>
       <LettersList>
         {renderLettersListItems()}
       </LettersList>

@@ -29,12 +29,14 @@ export const LetterSelection = styled.div`
   width: 78.125vw;
   background: #FFFFFF;
   border-radius: 21.3906px;
-  padding: 0.65vh 0;
+  padding: 2.96vh 0;
 `
 export const LetterRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 auto;
+  width: 70.93vw;
 `;
 
 export const LetterCircle = styled.div`
@@ -57,9 +59,9 @@ export const LetterCircle = styled.div`
 `
 
 export const LineBetweenLetters = styled.div`
-  width: 77.9vw;
+  width: 70.93vw;
   height: 0px;
-  margin: 23px 0;
+  margin: 23px auto;
 
   border: 0.891274px solid #E6E6E6;
 `;
@@ -103,17 +105,26 @@ export const LettersList = styled.div`
 `;
 
 export const SelectedLetterSection = styled.div`
+  width: 78.125vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const SelectedLetterMedal = styled.div`
   background-color: #F9F9F9;
   width: 174.81px;
   height: 230.1px;
-  top: 2183.12px
-  left: 873.04px
-  border-radius: 0px, 0px, 80.27px, 80.27px
+  top: 2183.12px;
+  left: 873.04px;
+  border-radius: 0px 0px 80.27px 80.27px;
   font-size: 167px;
   font-weight: 700;
   line-height: 203px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
 `;
 
 export const LettersListItem = styled.div`
