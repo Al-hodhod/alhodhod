@@ -7,7 +7,11 @@ const nextConfig = {
     };
     
     return config;
-  }
+  },
+  i18n: {
+    locales: ['en', 'fr', 'ar'],
+    defaultLocale: 'en',
+  },
 }
 
 module.exports = nextConfig
