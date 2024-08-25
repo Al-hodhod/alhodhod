@@ -117,6 +117,7 @@ export default function Dictionary() {
   };
 
   const handleBackToLettersButtonClick = () => {
+    setShowListOfSymbols(false);
     if (targetSectionRefDesktop.current) {
       window.scrollTo({ top: 0, behavior: "smooth" });
       setSelectedLetter("");

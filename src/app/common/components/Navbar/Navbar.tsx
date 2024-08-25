@@ -16,7 +16,7 @@ export const Navbar: React.FC<Props> = ({ path }) => {
   return (
     <>
       <Styled.NavBarList>
-        <Styled.NavbarListItem $active={path === "/"}>
+        {/* <Styled.NavbarListItem $active={path === "/"}>
           <Link href={"/"}>{t("Home")}</Link>{" "}
         </Styled.NavbarListItem>
         <Styled.NavbarListItem $active={path === "/dictionary"}>
@@ -32,7 +32,7 @@ export const Navbar: React.FC<Props> = ({ path }) => {
         </Styled.NavbarListItem>
         <Styled.NavbarListItem $active={path === "/about"}>
           <Link href="about">{t("About")}</Link>
-        </Styled.NavbarListItem>
+        </Styled.NavbarListItem> */}
         <Styled.LanguageSwitcherContainer>
           <LanguageSwitcher />
         </Styled.LanguageSwitcherContainer>

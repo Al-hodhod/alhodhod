@@ -21,31 +21,31 @@ export const Header: React.FC = () => {
     }
   }, [pathName]);
 
-  const isHomePage = path === "/";
+  const isHomePage = path === "/dictionary";
 
   const headerTextContent = (
     <>
-      {path === "/" && (
+      {/* {path === "/" && (
         <>
           <span style={{ color: "#C1FF0B" }}>{t("ISLAMIC")} </span>{t("DREAMS")}&nbsp;
           {t("INTERPRETATION")}{" "}
         </>
-      )}
-      {path === "/dictionary" && <>{t("ChooseTheFirstLetterOfThe")}</>}
+      )} */}
+      {path === "/" && <>{t("ChooseTheFirstLetterOfThe")}</>}
       {path === "/dreams" && <>{t("ChooseTheRelevantDream")}</>}
     </>
   );
 
   const headerSubTextContent = (
     <>
-      {path === "/" && (
+      {/* {path === "/" && (
         <>
           {t("BECAUSE YOUR")} <span style={{ color: "#C1FF0B" }}>{t("DREAMS")}&nbsp;</span>
           <Styled.BreakTag />
           {t("ARE")} <span style={{ color: "#C1FF0B" }}>{t("MEANINGFUL")}!</span>{" "}
         </>
-      )}
-      {path === "/dictionary" && (
+      )} */}
+      {path === "/" && (
         <>
           {t("Main")} <span style={{ color: "#C1FF0B" }}>{t("Symbol")}</span>
           <br />
