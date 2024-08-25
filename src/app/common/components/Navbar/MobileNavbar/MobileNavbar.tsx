@@ -34,7 +34,7 @@ export const MobileNavbar: React.FC<Props> = ({ path }) => {
   };
   return (
     <Styled.MobileNavbar>
-      <div onClick={toggleDrawer}>
+      {/* <div onClick={toggleDrawer}>
         {!open ? (
           <MenuOutlined style={{ fontSize: "20px", color: "white" }} />
         ) : (
@@ -136,7 +136,8 @@ export const MobileNavbar: React.FC<Props> = ({ path }) => {
             </Space>
           </Styled.NavbarListItem>
         </Styled.NavBarList>
-      </Styled.Drawer>
+      </Styled.Drawer> */}
+      <LanguageSwitcher />
     </Styled.MobileNavbar>
   );
 };

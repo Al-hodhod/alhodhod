@@ -11,6 +11,7 @@ import { BlogCard } from "../common/components/BlogCard";
 import { Video } from "../videos/Video";
 import { I18nextProvider, useTranslation } from "react-i18next";
 import i18n from "@/i18n";
+import Dictionary from "../dictionary/page";
 
 export const HomePageContent: React.FC = () => {
   const { t } = useTranslation();
@@ -56,7 +57,8 @@ export const HomePageContent: React.FC = () => {
   ];
   return (
     <I18nextProvider i18n={i18n}>
-      <div
+      <Dictionary/>
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -224,7 +226,7 @@ export const HomePageContent: React.FC = () => {
             </Col>
           </Row>
         </Styled.HomePageContainer>
-      </div>
+      </div> */}
     </I18nextProvider>
   );
 };
